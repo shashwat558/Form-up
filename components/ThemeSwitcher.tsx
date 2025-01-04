@@ -32,6 +32,7 @@ const ThemeSwitcher = () => {
 
             </TabsTrigger>
             <TabsTrigger value='system' onClick={() => setTheme("system")}>
+                
                 <DesktopIcon className='h-[1.21rem] w-[1.21rem]'/>
 
             </TabsTrigger>
