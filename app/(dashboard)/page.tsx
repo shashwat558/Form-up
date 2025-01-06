@@ -6,11 +6,21 @@ import { Suspense } from "react";
 import {FaWpforms} from "react-icons/fa";
 import {HiCursorClick} from "react-icons/hi";
 import {TbArrowBounce} from "react-icons/tb"
+import { Separator } from "@/components/ui/separator";
+import CreateFormButton from "@/components/CreateFormButton";
+
 
 
 export default function Home() {
   return (
-    <div className="container pt-4"><Suspense><CardStatsWrapper/></Suspense></div>
+    <div className="container pt-4"><Suspense>
+      <CardStatsWrapper/>
+      </Suspense>
+      <Separator className="my-6"/>
+      <h2 className="font-bold text-4xl col-span-2">Your Forms</h2>
+      <Separator className="my-6"/>
+      <CreateFormButton />
+      </div>
   );
 }
 
